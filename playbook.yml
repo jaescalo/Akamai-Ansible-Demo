@@ -1,0 +1,13 @@
+- name: Property Manager
+  hosts: localhost
+  tasks:
+  - name: Updating and Activating Property
+    property_manager:
+      name: 'my-property-name'
+      activate_staging: true
+      activate_production: false
+      version_notes: 'Created by Ansible'
+    register: testout
+  - name: dump test output
+    debug:
+      msg: '{{ testout }}'
