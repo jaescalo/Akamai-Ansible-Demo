@@ -90,6 +90,12 @@ propertyId:
     sample: 'prp_123456'
 ```
 
+## Playbook Execution
+Edit the playbook as needed and then to run it just run:
+```
+$ ansible-playbook playbook.yml
+```
+
 ## Resources
 - [Akamai OPEN Edgegrid API Clients](https://developer.akamai.com/libraries)
 - [Akamai Property Manager API](https://techdocs.akamai.com/cloudlets/v2/reference/api-workflow)
